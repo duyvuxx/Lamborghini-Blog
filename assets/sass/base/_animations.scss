@@ -1,0 +1,32 @@
+.tracking-in-contract {
+  animation: tracking-in-contract 4s cubic-bezier(0.215, 0.61, 0.355, 1)
+    infinite alternate forwards;
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0.6;
+    opacity: 1;
+    letter-spacing: normal;
+  }
+
+  100% {
+    opacity: 0.6;
+    opacity: 1;
+    letter-spacing: normal;
+  }
+}
+
+@include mobile {
+  @keyframes tracking-in-contract {
+    0%,70%,100% {
+      letter-spacing: 0;
+      opacity: 1;
+    }
+  }
+}

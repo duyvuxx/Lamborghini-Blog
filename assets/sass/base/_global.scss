@@ -1,0 +1,136 @@
+html {
+  // 62.5% <=> 10px
+  font-size: 62.5%;
+  line-height: 1.4;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#app {
+  background-color: rgb(238, 238, 238);
+}
+
+.wrapper {
+  max-width: 160rem;
+  margin: auto;
+
+  background-color: white;
+  &:nth-child(2) {
+    padding: 2rem 3rem;
+
+    border-left: 1px solid rgb(201, 201, 201);
+    border-right: 1px solid rgb(201, 201, 201);
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+
+    .section {
+      margin-bottom: 2rem;
+      padding: 1.2rem 2.4rem 2rem;
+
+      background-color: #e2e2e2;
+
+      &-title {
+        margin: 2rem auto;
+
+        text-align: center;
+
+        > h3 {
+          font-size: 3rem;
+        }
+
+        > p {
+          font-style: italic;
+        }
+      }
+
+      &-img {
+        img {
+          width: 100%;
+          height: 100%;
+
+          object-fit: cover;
+        }
+      }
+
+      &-desc {
+        margin: 2rem auto;
+
+        p:nth-child(1) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &-btn {
+        @include dflex(center, space-between);
+
+        button {
+          padding: 1.2rem 2rem;
+          
+          border: none;
+          background-color: white;
+          
+          transition: all 0.2s ease-out;
+          will-change: transform, background-color, color;
+        }
+
+        button:hover {
+          cursor: pointer;
+          color: rgb(0, 0, 0);
+          background-color: rgb(255, 230, 0);
+
+          transform: translateX(10%);
+        }
+
+        button:nth-child(2) {
+          padding: 1.2rem 4rem 1.2rem 1.5rem;
+
+          color: white;
+          background-color: black;
+
+          position: relative;
+        }
+
+        button:nth-child(2):hover {
+          cursor: pointer;
+          color: rgb(255, 255, 255);
+          background-color: rgb(95, 95, 95);
+          transform: none;
+        }
+
+        button:nth-child(2)::after {
+          content: "1";
+          position: absolute;
+          top: 50%;
+          left: 77%;
+          transform: translate(-50%, -50%);
+          width: 2.5rem;
+          height: 2.5rem;
+          line-height: 2.5rem;
+
+          background-color: white;
+          color: black;
+        }
+      }
+
+      &:nth-child(2) .section-btn button:nth-child(2)::after {
+        content: "7";
+      }
+
+      &:nth-child(3) .section-btn button:nth-child(2)::after {
+        content: "5";
+      }
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+header {
+  height: 5rem;
+  @include dflex(center, space-between);
+
+  background-color: rgb(255, 230, 0);
+
+  a {
+    font-size: 2rem;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+
+    transition: all 0.2s ease-in-out;
+    will-change: transform;
+
+    &:hover {
+      transform: translate(10%, -5%);
+    }
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.social {
+  @include dflex;
+
+  &-items {
+    a {
+      padding: 1.5rem;
+    }
+  }
+}
+
+.search {
+  a {
+    padding: 1.1rem 2rem;
+
+    &:hover {
+      transform: none;
+      background-color: white;
+    }
+  }
+}
