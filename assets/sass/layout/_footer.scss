@@ -11,7 +11,7 @@ footer {
 
     color: black;
     font-weight: bold;
-    background-color: rgb(255, 230, 0);
+    background-color: $clr-theme;
     transition: all 0.2s ease-in-out;
     will-change: transform;
 
@@ -25,7 +25,7 @@ footer {
     font-size: 2rem;
 
     > a {
-      color: rgb(255, 230, 0);
+      color: $clr-theme;
       font-style: italic;
       transition: all 0.2s ease-in-out;
 

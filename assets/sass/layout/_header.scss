@@ -2,7 +2,7 @@ header {
   height: 5rem;
   @include dflex(center, space-between);
 
-  background-color: rgb(255, 230, 0);
+  background-color: $clr-theme;
 
   a {
     font-size: 2rem;
