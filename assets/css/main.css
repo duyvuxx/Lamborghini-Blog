@@ -224,8 +224,9 @@ footer > a {
 }
 footer > a:hover {
   border-radius: 1.5rem;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  color: black;
 }
 footer .copyright {
   font-size: 2rem;
@@ -254,6 +255,7 @@ header {
   background-color: rgb(255, 230, 0);
 }
 header a {
+  padding: 1.5rem;
   font-size: 2rem;
   display: inline-block;
   color: rgb(0, 0, 0);
@@ -264,6 +266,7 @@ header a {
 header a:hover {
   -webkit-transform: translate(10%, -5%);
           transform: translate(10%, -5%);
+  color: black;
 }
 @media (max-width: 46.1875em) {
   header {
@@ -281,9 +284,6 @@ header a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.social-items a {
-  padding: 1.5rem;
 }
 
 .search a {
@@ -530,22 +530,13 @@ header a:hover {
 
 .advertise {
   margin-bottom: 2rem;
+  background-color: #e2e2e2;
 }
 .advertise h4 {
   padding: 2rem;
   text-transform: uppercase;
   color: black;
   background-color: rgb(255, 230, 0);
-}
-.advertise-items {
-  padding: 2rem;
-  background-color: #e2e2e2;
-}
-.advertise-items img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .tags {

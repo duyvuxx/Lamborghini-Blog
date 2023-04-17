@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lamborghini Lifestyle</title>
+    <!-- bootstrap  -->
+    <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"
+        />
+    
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous" defer
+        ></script>
+    
+    
     <!-- fav icon  -->
     <link rel="shortcut icon" href="./assets/imgs/512.png" type="image/png" />
     <link rel="shortcut icon" href="./assets/imgs/192.png" type="image/png" />
@@ -23,7 +38,7 @@
   <body>
     <div id="app">
       <header>
-        <ul class="social">
+        <ul class="social m-0">
           <li class="social-items">
             <a
               href="https://www.facebook.com/Lamborghini/?locale=vi_VN"
@@ -215,7 +230,7 @@
               </div>
   
               <div class="popular">
-                <h4>Popular Posts</h4>
+                <h4 class="m-0">Popular Posts</h4>
   
                 <ul class="post">
                   <li class="post-items">
@@ -269,15 +284,37 @@
               </div>
   
               <div class="advertise">
-                <h4>Advertise</h4>
+                <h4 class="m-0">Advertise</h4>
   
-                <div class="advertise-items">
+                <!-- <div class="advertise-items">
                   <img src="./assets/imgs/advertise.jpg" alt="advertise" />
+                </div> -->
+
+                <div id="slide_ad" class="carousel slide p-3" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/imgs/advertise_1.jpg" class="d-block w-100" alt="ad1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/imgs/advertise_2.jpg" class="d-block w-100" alt="ad2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/imgs/advertise_3.jpg" class="d-block w-100" alt="ad3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#slide_ad" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#slide_ad" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
   
               <div class="tags">
-                <h4>Tags</h4>
+                <h4 class="m-0">Tags</h4>
   
                 <div class="tags-items">
                   <span>Sport</span>
@@ -298,7 +335,7 @@
               </div>
   
               <div class="inspiration">
-                <h4>Inspiration</h4>
+                <h4 class="m-0">Inspiration</h4>
                 <ul class="inspiration-items">
                   <li class="inspiration-items-img">
                     <img src="./assets/imgs/insp_1.jpg" alt="insp_1" />
@@ -316,7 +353,7 @@
               </div>
   
               <div class="follow">
-                <h4>Follow Me</h4>
+                <h4 class="m-0">Follow Me</h4>
                 <ul class="follow-social">
                   <li class="follow-social-items">
                     <a
@@ -367,7 +404,7 @@
               </div>
   
               <div class="subscribe">
-                <h4>Subscribe</h4>
+                <h4 class="m-0">Subscribe</h4>
                 <form id="form_subscribe" class="subscribe-items">
                   <p>Enter your e-mail below & get notified on the latest blog posts.</p>
                   <input type="email" placeholder="Enter e-mail" />

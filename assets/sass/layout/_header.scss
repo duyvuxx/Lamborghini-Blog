@@ -5,6 +5,8 @@ header {
   background-color: $clr-theme;
 
   a {
+    padding: 1.5rem;
+    
     font-size: 2rem;
     display: inline-block;
     color: rgb(0, 0, 0);
@@ -14,6 +16,7 @@ header {
 
     &:hover {
       transform: translate(10%, -5%);
+      color: black;
     }
   }
 
@@ -24,12 +27,6 @@ header {
 
 .social {
   @include dflex;
-
-  &-items {
-    a {
-      padding: 1.5rem;
-    }
-  }
 }
 
 .search {

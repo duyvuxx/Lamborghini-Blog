@@ -248,24 +248,14 @@
 .advertise {
   margin-bottom: 2rem;
 
+  background-color: #e2e2e2;
+
   h4 {
     padding: 2rem;
 
     text-transform: uppercase;
     color: black;
     background-color: $clr-theme;
-  }
-
-  &-items {
-    padding: 2rem;
-    background-color: #e2e2e2;
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      object-fit: cover;
-    }
   }
 }
 
