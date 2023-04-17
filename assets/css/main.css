@@ -538,6 +538,21 @@ header a:hover {
   color: black;
   background-color: rgb(255, 230, 0);
 }
+.advertise-items {
+  height: 35rem;
+  border-radius: 1rem;
+}
+.advertise-items img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 46.1875em) {
+  .advertise-items {
+    height: 25rem;
+  }
+}
 
 .tags {
   margin-bottom: 2rem;
